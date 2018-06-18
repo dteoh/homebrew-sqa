@@ -1,6 +1,6 @@
 cask 'slowquitapps' do
-  version '0.4.1'
-  sha256 '27f274649add71c67379259d44000c178e9173b7fb7b103d1b4e57997b23e1ac'
+  version '0.5.0'
+  sha256 'd8190ea93c58e9b6b8c5fbef7de2920a7915adc3ce9f2850e543b03a8e5694cc'
 
   url "https://github.com/dteoh/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   name 'SlowQuitApps'
