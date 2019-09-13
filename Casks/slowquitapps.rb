@@ -7,7 +7,7 @@ cask 'slowquitapps' do
   homepage 'https://github.com/dteoh/SlowQuitApps'
   appcast 'https://github.com/dteoh/SlowQuitApps/releases.atom'
 
-  depends_on macos: :mojave
+  depends_on macos: '>= :mojave'
 
   app 'SlowQuitApps.app'
 end
