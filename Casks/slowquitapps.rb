@@ -1,6 +1,6 @@
 cask 'slowquitapps' do
-  version '0.8.0'
-  sha256 '4d994932b60968c58108f3d4c43798d8fa8fd2bd8c5b58bcf2882895fb27299d'
+  version '0.8.1'
+  sha256 '7f6b5a518d9a6e7a3ff6596e6f6b017358a806d6a565d7660b93d9f5b262868a'
 
   url "https://github.com/dteoh/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   name 'SlowQuitApps'
@@ -10,6 +10,7 @@ cask 'slowquitapps' do
   depends_on macos: '>= :mojave'
 
   app 'SlowQuitApps.app'
+  binary "#{appdir}/SlowQuitApps.app/Contents/MacOS/sqa"
 
   caveats <<-DESC
   Accessibility permissions must be reset after updating or re-installing.
