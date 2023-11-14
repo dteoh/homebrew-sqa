@@ -5,7 +5,10 @@ cask 'slowquitapps' do
   url "https://github.com/dteoh/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   name 'SlowQuitApps'
   homepage 'https://github.com/dteoh/SlowQuitApps'
-  appcast 'https://github.com/dteoh/SlowQuitApps/releases.atom'
+  livecheck do
+    url 'https://github.com/dteoh/SlowQuitApps/releases.atom'
+    strategy :sparkle
+  end
 
   depends_on macos: '>= :mojave'
 
